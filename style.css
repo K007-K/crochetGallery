@@ -124,28 +124,105 @@ label{
     transition: .4s linear;
 }
 
-.shopping-cart{
+/* Shopping cart box */
+.shopping-cart {
     position: absolute;
     top: 110%;
     right: -110rem;
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
     box-shadow: var(--box-shadow);
-    width: 40rem;
-    height: 30rem;
+    width: 50rem;      
+    height: 40rem;    
     background: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: center;
+    overflow-y: auto;   
 }
 
-.shopping-cart .box{
-    color:palevioletred;
-    font-size: 2.2rem;
-    margin-bottom: 6rem;
+/* Cart heading */
+.shopping-cart h2 {
+    font-size: 3rem;    
+    color: palevioletred;
+    margin-bottom: 1rem;
 }
+
+/* Cart empty text */
+#cart-empty {
+    font-size: 2rem;   
+    color: palevioletred;
+    margin-top: 2rem;
+}
+
+/* Cart total text */
+.total {
+    font-size: 2.2rem;  
+    margin-top: 1rem;
+}
+
+/* Cart item text */
+.cart-info p {
+    font-size: 2rem;    
+}
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.cart-img {
+    width: 50px;  
+    height: 50px; /* smaller image */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.cart-info {
+    flex: 1;
+    font-size: 1.6rem;
+    color: palevioletred;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 1.6rem;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+/* Add-to-Cart buttons in cart (Shop Now) */
+.shopping-cart .btn {
+    font-size: 2.4rem;       /* bigger text */
+    padding: 8px 6rem;       /* more padding */
+    background: palevioletred;
+    color: white;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    align-self: center;      /* center in cart */
+}
+
+/* Optional: increase spacing between cart items */
+.cart-item {
+    margin-bottom: 1.5rem;   /* more space between items */
+}
+
 
 .btn{
     font-size: 2.2rem;
@@ -162,36 +239,34 @@ label{
     transition: .4s linear;
 }
 
-.login-form{
+/* Login form box */
+.login-form {
     position: absolute;
     top: 110%;
     right: -110rem;
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: 3rem;             /* increased padding for bigger box */
+    border-radius: 1rem;        /* smooth corners */
     box-shadow: var(--box-shadow);
-    width: 40rem;
-    height: 30rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+    width: 45rem;               /* increased width */
+    background: #fff;           /* white background */
 }
+
+/* Input boxes */
+.login-form .box {
+    color: rgb(32, 32, 32);
+    border: none;               /* remove border */
+    outline: none;              /* remove outline */
+    padding: 1.5rem;            /* bigger input fields */
+    width: 100%;
+    font-size: 1.8rem;
+    border-radius: 0.8rem;
+}
+
 .login-form h3{
     color: palevioletred;
     font-size: 2.5rem;
 }
-.login-form .box{
-    border:1px solid;
-    margin: .7rem 0;
-    border-radius: .6rem;
-    background: #fca2d8;
-    padding: 1rem;
-    font-size: 1.6rem;
-    text-transform: solid;
-}
+
 .login-form p{
     font-size: 1.4rem;
     color:palevioletred;
@@ -216,20 +291,23 @@ section{
     padding:2rem 9%;
 }
 
-.home{
-    border:0px solid;
-    display:flex;
+.home {
+    display: flex;
     justify-content: center;
+    align-items: center;       /* vertically center content */
     background-image: url('bgg.jfif');
-    background-position: top;
-    background-size: cover;
-    padding-top: 40rem;
-    padding-bottom: 40rem;
-    
+    background-position: center;
+    background-size: cover;    /* fill the entire screen */
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;             /* full viewport height */
+    padding: 0;                /* remove extra padding */
 }
-.home .content{
+
+.home .content {
     text-align: center;
 }
+
 .home .content h3{
     font-family: 'Times New Roman', Times, serif;
     font-size: 8rem;
