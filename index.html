@@ -3,92 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>crochet_Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewpoint" content="width=device-width,initial-scale1.0">
 </head>
 <body>
    <!--header section -->
-       <header class="header">
+   <header class="header">
         <a href="#" class="logo"><i class="fa-solid fa-heart"></i>crochetGallery</a>
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#features">feautures</a>
+            <a href="#features">features</a>
             <a href="#products">products</a>
             <a href="#categories">categories</a>
             <a href="#review">review</a>
         </nav>
     
-<div class="icons">
-    <div class="fa fa-bars" id="menu-btn"></div>
-    <div class="fa fa-search" id="search-btn"></div>
-    <div class="fa fa-shopping-cart" id="cart-btn"></div>
-    <div class="fa fa-user" id="login-btn"></div>
-</div>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
 
-<form class="search-form">
-    <input type="search" id="search" placeholder="Search here...">
-    <label for="search" class="fa fa-search"></label>
-</form>
+        <form class="search-form">
+            <input type="search" id="search" placeholder="Search here...">
+            <label for="search" class="fa fa-search"></label>
+        </form>
 
-<div class="shopping-cart">
-    <div class="box">
-        <span class="products">...your cart is empty...</span>
-    </div>
-    <a href="#products" class="btn">Shop Now</a>
-</div>
+        <div class="shopping-cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-empty">...your cart is empty...</p>
+            <p class="total"><b>Total: $<span id="cart-total">0</span></b></p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
 
-<form action="#" class="login-form">
-    <h3>LOGIN NOW</h3>
-    <input type="email" placeholder="your email" class="box">
-    <input type="Password" placeholder="your Password" class="box">
-    <p>Forget your password <a href="#"> Click Here</a></p>
-    <p>Dont Have an Account <a href="#"> Create Now</a></p>
-    <input type="submit" value="login now" class="btn">
-</form>
-
+        <form action="#" class="login-form">
+            <h3>LOGIN NOW</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your Password" class="box">
+            <p>Forget your password <a href="#">Click Here</a></p>
+            <p>Dont Have an Account <a href="#">Create Now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
     </header>
   <!--header end--> 
 
   <!-- background -->
-    <section class="home" id="home">
+  <section class="home" id="home">
         <div class="content">
             <h3>Wish You Love our Art</h3>
             <p>All the Products made with high quality yarn.</p>
             <a href="#"class="btn">shop now</a>
         </div>
-
-    </section>
+  </section>
   <!-- background end -->
 
     <!-- feature section -->
     <section class="features" id="features">
         <h1 class="heading">our features</h1>
-
         <div class="box-container">
             <div class="box">
-                <img src="f1.jpg">
+                <img src="images/f1.jpg">
                 <h3>High Quality Yarn</h3>
                 <p>100% mercerized cotton provides a beautiful matte finish and incredible durability</p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="box">
-                <img src="f2.jpg">
+                <img src="images/f2.jpg">
                 <h3>Free Delivery</h3>
                 <p>No Extra charges</p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="box">
-                <img src="f3.jpg">
+                <img src="images/f3.jpg">
                 <h3>Easy Payments</h3>
                 <p>You Can Trust Our Payments</p>
                 <a href="#" class="btn">Read More</a>
             </div>
-
         </div>
     </section>
-
     <!-- feature section end  -->
 
     <!-- products section -->
@@ -97,107 +92,103 @@
 
         <div class="product-slider">
             <div class="wrapper">
-                <div class="box">
-                    <img src="p1.jfif">
+                <div class="box" data-name="Bunny Plush" data-price="25">
+                    <img src="images/p1.jfif">
                     <h3>Bunny Plush</h3>
                     <div class="price">price: $25</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p2.jfif">
+                <div class="box" data-name="rose bouquet" data-price="15">
+                    <img src="images/p2.jfif">
                     <h3>rose bouquet</h3>
                     <div class="price">price: $15</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p3.jfif">
+                <div class="box" data-name="cute star charms" data-price="5">
+                    <img src="images/p3.jfif">
                     <h3>cute star charms</h3>
                     <div class="price">price: $5</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-           
-                <div class="box">
-                    <img src="p4.jfif">
+                <div class="box" data-name="Flower Charm" data-price="8">
+                    <img src="images/p4.jfif">
                     <h3>Flower Charm</h3>
                     <div class="price">price: $8</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p5.jfif">
+                <div class="box" data-name="Spider-man plushie" data-price="20">
+                    <img src="images/p5.jfif">
                     <h3>Spider-man plushie </h3>
                     <div class="price">price: $20</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p6.jfif">
+                <div class="box" data-name="Plushie bear" data-price="23">
+                    <img src="images/p6.jfif">
                     <h3>Plushie bear</h3>
                     <div class="price">price: $23</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-            
-                <div class="box">
-                    <img src="p7.jfif">
+                <div class="box" data-name="Pink-lily bouquet" data-price="13">
+                    <img src="images/p7.jfif">
                     <h3>Pink-lily bouquet</h3>
                     <div class="price">price: $13</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p9.jfif">
+                <div class="box" data-name="Bow keychain" data-price="4">
+                    <img src="images/p9.jfif">
                     <h3>Bow keychain</h3>
                     <div class="price">price: $4</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p8.jfif">
+                <div class="box" data-name="Dino keychain" data-price="9">
+                    <img src="images/p8.jfif">
                     <h3>Dino keychain</h3>
                     <div class="price">price: $9</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-
-                <div class="box">
-                    <img src="p10.jfif">
+                <div class="box" data-name="Bat-man plushie" data-price="20">
+                    <img src="images/p10.jfif">
                     <h3>Bat-man plushie</h3>
                     <div class="price">price: $20</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p11.jfif">
+                <div class="box" data-name="Flower blanket" data-price="25">
+                    <img src="images/p11.jfif">
                     <h3>Flower blanket</h3>
                     <div class="price">price: $25</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
-                <div class="box">
-                    <img src="p12.jfif">
+                <div class="box" data-name="Sun-Flower bouquet" data-price="13">
+                    <img src="images/p12.jfif">
                     <h3>Sun-Flower bouquet</h3>
                     <div class="price">price: $13</div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="javascript:void(0)" class="btn add-to-cart">Add To Cart</a>
                 </div>
             </div>
         </div>
      </section>
 
-    <!-- product section end -->
      <!-- categories section -->
      <section class="categoires" id="categories">
         <h1 class="heading">Categories</h1>
         <div class="box-container">
             <div class="box">
-                <img src="c1.jfif">
+                <img src="images/c1.jfif">
                 <h3>KeyChains</h3>
                 <a href="#" class="btn">shop now</a>
             </div>
             <div class="box">
-                <img src="c2.jfif">
+                <img src="images/c2.jfif">
                 <h3>Bouquet</h3>
                 <a href="#" class="btn">shop now</a>
             </div>
             <div class="box">
-                <img src="c3.jfif">
+                <img src="images/c3.jfif">
                 <h3>pushies</h3>
                 <a href="#" class="btn">shop now</a>
             </div>
             <div class="box">
-                <img src="c4.jfif">
+                <img src="images/c4.jfif">
                 <h3>Flower Blankets</h3>
                 <a href="#" class="btn">shop now</a>
             </div>
@@ -210,7 +201,7 @@
         <h1 class="heading">Customer's Review</h1>
         <div class="reviewbox">
             <div class="boxi">
-                <img src="r1.jfif">
+                <img src="images/r1.jfif">
                 <h2>Sweety</h2>
                 <div class="fa fa-star" id="star"></div>
                 <div class="fa fa-star" id="star"></div>
@@ -220,7 +211,7 @@
                 <p>so happy with the product.</p>
             </div>
             <div class="boxi">
-                <img src="r2.jfif">
+                <img src="images/r2.jfif">
                 <h2>Noor</h2>
                 <div class="fa fa-star" id="star"></div>
                 <div class="fa fa-star" id="star"></div>
@@ -230,23 +221,20 @@
                 <p>love the quality.worthy...</p>
             </div>
             <div class="boxi">
-                <img src="r3.jfif">
+                <img src="images/r3.jfif">
                 <h2>missi</h2>
                 <div class="fa fa-star" id="star"></div>
                 <div class="fa fa-star" id="star"></div>
                 <div class="fa fa-star" id="star"></div>
                 <div class="fa fa-star" id="star"></div>
-                
                 <p>my friend love it. Thank you</p>
             </div>
         </div>
      </section>
-
-      <!-- review end -->
-
+     <!-- review end -->
 
        <!-- footer section -->
-         <footer>
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <h3>Contact Us</h3>
@@ -258,7 +246,7 @@
                 <h3>Quick Links</h3>
                  <ul class="list">
                     <li><a href="#home">home</a></li>
-                    <li><a href="#features">feautures</a></li>
+                    <li><a href="#features">features</a></li>
                     <li><a href="#products">products</a></li>
                     <li><a href="#categories">categories</a></li>
                  </ul>
@@ -271,16 +259,14 @@
                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
                  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
                 </ul>
-                </div>
+            </div>
         </div>
         <div class="bottom-bar">
             <p> 2025 crochetGallery. All rights reserved</p>
         </div>
     </footer>
-        <!-- footer end -->
+    <!-- footer end -->
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
-
