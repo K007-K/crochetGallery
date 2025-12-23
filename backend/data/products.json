@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "Cute Crochet Bear",
+        "price": 1299,
+        "category": "Plushies",
+        "image": "/p1.jfif",
+        "description": "A lovable handmade bear made with soft cotton yarn. Perfect for gifting."
+    },
+    {
+        "id": "2",
+        "name": "Sunflower Bouquet",
+        "price": 2499,
+        "category": "Bouquets",
+        "image": "/c2.jfif",
+        "description": "Everlasting sunflowers that brighten up any room. No water needed!"
+    },
+    {
+        "id": "3",
+        "name": "Pastel Keychain Set",
+        "price": 499,
+        "category": "Accessories",
+        "image": "/c1.jfif",
+        "description": "Adorable mini keychains to accessorize your bag or keys."
+    },
+    {
+        "id": "4",
+        "name": "Cozy Granny Square Blanket",
+        "price": 3499,
+        "category": "Home Decor",
+        "image": "/c4.jfif",
+        "description": "Traditional granny square blanket with a modern pastel twist."
+    },
+    {
+        "id": "5",
+        "name": "Amigurumi Bunny",
+        "price": 1499,
+        "category": "Plushies",
+        "image": "/p2.jfif",
+        "description": "Soft and squishy bunny friend for kids and adults alike."
+    },
+    {
+        "id": "6",
+        "name": "Rose Bouquet",
+        "price": 2999,
+        "category": "Bouquets",
+        "image": "/c3.jfif",
+        "description": "Romantic handcrafted roses that last forever."
+    }
+]

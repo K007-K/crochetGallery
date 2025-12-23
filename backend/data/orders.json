@@ -1,0 +1,84 @@
+[
+  {
+    "id": "1766503643681",
+    "userId": "1766502838551",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 2,
+        "product": {
+          "id": "1",
+          "name": "Cute Crochet Bear",
+          "price": 25.99,
+          "category": "Plushies",
+          "image": "/p1.jfif",
+          "description": "A lovable handmade bear made with soft cotton yarn. Perfect for gifting."
+        }
+      }
+    ],
+    "total": 51.98,
+    "shippingDetails": {
+      "fullName": "ashya",
+      "address": "india",
+      "city": "vizag",
+      "zip": "530001",
+      "phone": "8977733389",
+      "paymentMethod": "COD"
+    },
+    "status": "Placed",
+    "date": "2025-12-23T15:27:23.681Z"
+  },
+  {
+    "id": "1766504757692",
+    "userId": "1766502838551",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 1,
+        "product": {
+          "id": "1",
+          "name": "Cute Crochet Bear",
+          "price": 1299,
+          "category": "Plushies",
+          "image": "/p1.jfif",
+          "description": "A lovable handmade bear made with soft cotton yarn. Perfect for gifting."
+        }
+      },
+      {
+        "productId": "3",
+        "quantity": 3,
+        "product": {
+          "id": "3",
+          "name": "Pastel Keychain Set",
+          "price": 499,
+          "category": "Accessories",
+          "image": "/c1.jfif",
+          "description": "Adorable mini keychains to accessorize your bag or keys."
+        }
+      },
+      {
+        "productId": "2",
+        "quantity": 2,
+        "product": {
+          "id": "2",
+          "name": "Sunflower Bouquet",
+          "price": 2499,
+          "category": "Bouquets",
+          "image": "/c2.jfif",
+          "description": "Everlasting sunflowers that brighten up any room. No water needed!"
+        }
+      }
+    ],
+    "total": 7794,
+    "shippingDetails": {
+      "fullName": "kk",
+      "address": "hbh",
+      "city": "gvgv",
+      "zip": "65656",
+      "phone": "123456",
+      "paymentMethod": "COD"
+    },
+    "status": "Placed",
+    "date": "2025-12-23T15:45:57.692Z"
+  }
+]
